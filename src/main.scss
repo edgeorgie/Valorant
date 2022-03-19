@@ -7,20 +7,23 @@ $secondary-hover: hsl(14, 71%, 61%);
 $dark: hsl(200, 19%, 18%);
 $light: hsl(14, 100%, 91%);
 
+$beige: hsl(0, 30%, 95%);
+
 $white: hsla(0, 0%, 98%, 1);
-$black: hsla(234, 100%, 14%, 1);
+$gray: hsla(0, 0%, 13%, 0.04);
+$black: hsl(234, 100%, 14%);
 
 // Configurations
 
-* {
+*, *:before, *:after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 100%;
-  box-sizing: border-box;
 }
 
 body {
@@ -31,6 +34,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.75;
   font-weight: 400;
+  color: $black;
 }
 
 // Escala 1.250 - Major Third

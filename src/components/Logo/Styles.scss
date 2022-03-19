@@ -1,21 +1,23 @@
 @import '../../main';
 
 .logo-container {
-  background-color: $white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  color: $primary;
   justify-content: center;
-  height: auto;
+  height: 75px;
   width: auto;
   z-index: 3;
 
-  .logo--light {
-    font-weight: 400;
+  .logo--img__valorant {
+    width: auto;
+    height: 35px;
   }
 
-  .logo--bold {
-    font-weight: 700;
+  .logo--span {
+    background-color: $primary;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
   }
 }

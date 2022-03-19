@@ -15,12 +15,13 @@ export const Card = () => {
 
   return (
     <>
+      <div className="card-container--img"></div>
       <div className='card-container'>
         <div
           className={`box ${
             show === false
               ? 'agent-content'
-              : 'agent-content-click agent-content-click-responsive'
+              : 'agent-content-click-responsive'
           }`}
           onClick={handleShow}
         >
