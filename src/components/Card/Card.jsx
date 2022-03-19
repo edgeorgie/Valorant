@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Styles.scss'
 
 export const Card = () => {
+  const [show, setShow] = useState(false)
+  const [heart, setHeart] = useState(false)
+
+  const handleShow = () => {
+    setShow(!show)
+  }
+
+  const handleHeart = () => {
+    setHeart(!heart)
+  }
+
   return (
     <>
       <div className='card-container'>
-        <div className='agent-content'>
+        <div
+          className={`box ${
+            show === false
+              ? 'agent-content'
+              : 'agent-content-click agent-content-click-responsive'
+          }`}
+          onClick={handleShow}
+        >
           <div className='agent-info-container'>
             <div className='agent-info-principal'>
               <span className='agent-role'>Role</span>
@@ -50,7 +68,13 @@ export const Card = () => {
 
               <div className='buttons-container'>
                 <button className='read-more'>Leer más</button>
-                <button className='add-favorite'>C</button>
+                <button className='add-favorite' onClick={handleHeart}>
+                  <i
+                    className={`box ${
+                      heart === false ? 'heart' : 'heart heart-click'
+                    }`}
+                  ></i>
+                </button>
               </div>
             </div>
           </div>
