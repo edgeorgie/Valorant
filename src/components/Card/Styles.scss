@@ -1,0 +1,129 @@
+@import '../../main.scss';
+
+.card-container {
+  background-image: url('https://picsum.photos/200/300');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 400px;
+  border-radius: 5%;
+  position: absolute;
+  z-index: 3;
+
+  .agent-content {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    
+    
+      &:hover {
+        transition: background-color 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.2);
+        .agent-info-container {
+          transition: transform 0.3s ease-in;
+          transform: translate(0%, -62.5%);
+
+        .agent-info-principal {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    &:not(:hover) {
+      .agent-info-container {
+        transition: transform 0.3s ease-out;        
+        transform: translate(0%, 0%);
+      }
+      
+      .agent-info-secondary {
+        transition: display 0.5s ease-out;
+        display: none;
+      }
+    }
+
+    .agent-info-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 310px;
+      color: $white;
+      padding: 0 10px;
+      height: 100%;
+      .agent-info-principal {
+        margin-bottom: 30px;
+      }
+    }
+
+    .agent-info-secondary {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      
+      .agent-description {
+        text-align: justify;
+      }
+      .agent-abilities-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        
+        div {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          width: 35px;
+          height: 30px;
+        }
+      }
+
+      .buttons-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: 20%;
+        
+        .read-more {
+          border: 1px solid $white;
+          border-radius: 8px;
+          color: $white;
+          width: 75%;
+
+          &:hover {
+            background-color: $primary;
+            border: 1px solid $primary;
+          }
+
+          &:active {
+            transition: background-color 0.15s ease-out;
+            background-color: $primary-dark;
+            border: 1px solid $primary-dark;
+          }
+        }
+
+        .add-favorite {
+          border: 1px solid $white;
+          border-radius: 8px;
+          color: $white;
+          width: 20%;
+
+          &:hover {
+            background-color: $primary;
+            border: 1px solid $primary;
+          }
+
+          &:active {
+            transition: background-color 0.15s ease-out;
+            background-color: $light;
+            border: 1px solid $light;
+          }
+        }
+      }
+    }
+  }
+}

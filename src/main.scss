@@ -1,0 +1,85 @@
+$primary: hsl(7, 100%, 58%);
+$primary-dark: hsl(7, 71%, 41%);
+
+$secondary: hsla(14, 100%, 69%, 1);
+$secondary-hover: hsl(14, 71%, 61%);
+
+$dark: hsl(200, 19%, 18%);
+$light: hsl(14, 100%, 91%);
+
+$white: hsla(0, 0%, 98%, 1);
+$black: hsla(234, 100%, 14%, 1);
+
+// Configurations
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+// Escala 1.250 - Major Third
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+  line-height: normal;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 1px solid $dark;
+  background: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
