@@ -7,8 +7,8 @@ export const HeaderMenu = () => {
     <nav>
       <ul className='with-indicator'>
         <li className='Nav-item is-active'>
-          <Link to='/agentes'>
-            Agentes
+          <Link to='/agents'>
+            Agents
           </Link>
         </li>
         <li className='Nav-item'>
@@ -17,18 +17,18 @@ export const HeaderMenu = () => {
           </Link>
         </li>
         <li className='Nav-item'>
-          <Link to='/armas'>
-            Armas
+          <Link to='/guns'>
+            Guns
           </Link>
         </li>
         <li className='Nav-item'>
-          <Link to='/titulos'>
-            Títulos
+          <Link to='/titles'>
+            Titles
           </Link>
         </li>
         <li className='Nav-item'>
-          <Link to='/modos'>
-            Modos
+          <Link to='/modes'>
+            Modes
           </Link>
         </li>
       </ul>
