@@ -10,7 +10,7 @@ export const Logo = () => {
       <Link to='/home'>
         <img className='logo--img__valorant' src={Valorant} alt='Houm Logo' />
       </Link>
-      <span className='logo--span'></span>
+      <span className='logo--span' />
       <Link to='/home'>
         <img className='logo--img__houm' src={Houm} alt='Houm Logo' />
       </Link>

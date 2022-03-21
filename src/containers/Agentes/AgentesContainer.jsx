@@ -22,11 +22,12 @@ export const AgentesContainer = () => {
   }, [])
 
   return (
-    <div className="agentes-container">
+    <div className='agentes-container'>
       {
         agentes.map(agente => (
           <Card
             key={agente.uuid}
+            agentes={agentes}
             agente={agente}
             ability1={agente.abilities[0]}
             ability2={agente.abilities[1]}
