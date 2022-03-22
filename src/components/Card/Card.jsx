@@ -16,7 +16,6 @@ export const Card = ({ agente, ability1, ability2, ability3, ability4 }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         const { isIntersecting } = entries[0]
-        console.log(isIntersecting)
         if (isIntersecting) {
           setShowCard(true)
           observer.disconnect()

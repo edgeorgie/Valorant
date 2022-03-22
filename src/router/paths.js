@@ -7,7 +7,7 @@ export const Paths = [
     element: <Home />
   },
   {
-    path: '/agentes',
+    path: '/agents',
     element: <Agentes />
   }
 ]

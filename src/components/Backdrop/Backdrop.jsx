@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 export const Backdrop = ({ children, onClick }) => {
   return (
     <AnimatePresence
-      initial={false}
+      initial={true}
       exitBeforeEnter={true}
     >
       <motion.div style={{
