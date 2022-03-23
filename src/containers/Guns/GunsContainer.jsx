@@ -7,14 +7,12 @@ import './Styles.scss'
 export const GunsContainer = () => {
   const API_GUNS = 'https://valorant-api.com/v1/weapons'
   const [guns, setGuns] = useState([])
-  // const [gunsSkins, setGunsSkins] = useState([])
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     const getGuns = async () => {
       await axios.get(API_GUNS)
         .then(res => {
-          console.log(res.data.data)
           setGuns(res.data.data)
         }).catch(err => {
           console.log(err)
@@ -42,9 +40,9 @@ export const GunsContainer = () => {
                         gun.skins.map(skin => {
                           return (
                             <CardGunSkin
-                            key={skin.uuid}
-                            gun={gun}
-                            skin={skin}
+                              key={skin.uuid}
+                              gun={gun}
+                              skin={skin}
                             />
                           )
                         })

@@ -28,54 +28,55 @@ export const CardGuns = ({ gun, stats, shopData }) => {
       >
         {
           showCard && (
-                    <><div className='card-gun-img-container'>
+            <><div className='card-gun-img-container'>
               <img className='card-gun--img' src={gun.displayIcon} alt='Weapon' />
-            </div><div className='card-gun--info'>
-                <div className='card-gun--info-title'>
+              </div><div className='card-gun--info'>
+              <div className='card-gun--info-title'>
                   <h3>{gun.displayName}</h3>
                 </div>
 
-                <hr />
+              <hr />
 
-                <div className='card-gun--stats'>
+              <div className='card-gun--stats'>
                   <h4>Stats: </h4>
                   <div className='card-gun--list'>
-                    <li>
+                  <li>
                       <span>Fire rate:</span> <span>{stats.fireRate}</span>
                     </li>
-                    <li>
+                  <li>
                       <span>Magazine size:</span> <span>{stats.magazineSize}</span>
                     </li>
-                    <li>
+                  <li>
                       <span>Reload time:</span>{' '}
                       <span>{stats.reloadTimeSeconds}s</span>
                     </li>
-                    <li>
+                  <li>
                       <span>Run speed multiplier:</span>{' '}
                       <span>{stats.runSpeedMultiplier}</span>
                     </li>
-                    <li>
+                  <li>
                       <span>First bullet accuracy:</span>{' '}
                       <span>{stats.firstBulletAccuracy}</span>
                     </li>
-                    <li>
+                  <li>
                       <span>Shotgun pellet count:</span>{' '}
                       <span>{stats.shotgunPelletCount}</span>
                     </li>
-                  </div>
                 </div>
-                <div className='card-gun-shop-data'>
+                </div>
+              <div className='card-gun-shop-data'>
                   <h4>Shop data: </h4>
                   <div className='card-gun--list'>
-                    <li>
+                  <li>
                       <span>Price:</span> <span>{shopData.cost}</span>
                     </li>
-                    <li>
+                  <li>
                       <span>Category:</span> <span>{shopData.category}</span>
                     </li>
-                  </div>
                 </div>
-              </div></>
+                </div>
+                  </div>
+            </>
           )
         }
       </motion.div>

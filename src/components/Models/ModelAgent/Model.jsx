@@ -24,7 +24,7 @@ export const Model = ({ agente, setSelectedId, ability1, ability2, ability3, abi
           }
           }
         >
-          <img src={agente.fullPortrait} alt='Agente' />
+          <img src={agente.fullPortraitV2} alt='Agente' />
         </div>
         <div className='card-container--modal-content-info'>
           <span className='agent-tags'>
