@@ -48,7 +48,9 @@ export const NotFound = () => {
               Click the button below to #StayAtHome
               <br /> (lol, what a joke)
             </p>
-            <button><Link to='/'>I wanna go home!</Link></button>
+            <Link to='/'>
+              <button>I wanna go home!</button>
+            </Link>
           </article>
         </div>
       </div>
