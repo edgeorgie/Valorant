@@ -7,11 +7,11 @@ import './Styles.scss'
 export const Logo = () => {
   return (
     <div className='logo-container'>
-      <Link to='/home'>
+      <Link to='/'>
         <img className='logo--img__valorant' src={Valorant} alt='Houm Logo' />
       </Link>
       <span className='logo--span' />
-      <Link to='/home'>
+      <Link to='/'>
         <img className='logo--img__houm' src={Houm} alt='Houm Logo' />
       </Link>
     </div>

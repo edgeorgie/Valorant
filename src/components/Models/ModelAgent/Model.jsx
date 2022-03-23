@@ -30,14 +30,14 @@ export const Model = ({ agente, setSelectedId, ability1, ability2, ability3, abi
           <span className='agent-tags'>
             <b>Tags: </b>
             {
-              agente.characterTags !== null ? agente.characterTags.map((tag, id) => <span key={id}>{tag} </span>) : 'this agent has no tags.'
+              agente.characterTags !== null ? agente.characterTags.map((tag, id) => <span key={id}>{tag} </span>) : 'this agent has 0 tags.'
             }
           </span>
 
-          <div class='close-container' onClick={() => setSelectedId(null)}>
-            <div class='leftright'></div>
-            <div class='rightleft'></div>
-            <label class='close'>Close?</label>
+          <div className='close-container' onClick={() => setSelectedId(null)}>
+            <div className='leftright' />
+            <div className='rightleft' />
+            <label className='close'>Close?</label>
           </div>
 
           <div className='card-container-modal-content-info-right'>
@@ -78,5 +78,6 @@ export const Model = ({ agente, setSelectedId, ability1, ability2, ability3, abi
           </div>
         </div>
       </div>
-    </motion.div>)
+    </motion.div>
+  )
 }

@@ -14,6 +14,7 @@
   border-radius: 5%;
   z-index: 2;
   position: relative;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
   .agent-content {
     border-radius: inherit;
@@ -81,7 +82,7 @@
             border: 1px solid $white;
             border-radius: 8px;
             color: $white;
-            width: 75%;
+            width: 100%; // 75% with heart btn
 
             &:hover {
               background-color: $primary;
@@ -233,7 +234,7 @@
             border: 1px solid $white;
             border-radius: 8px;
             color: $white;
-            width: 75%;
+            width: 100%; // 75% with heart btn
 
             &:hover {
               background-color: $primary;
